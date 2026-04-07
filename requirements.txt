@@ -1,4 +1,4 @@
 fastapi[all]
 uvicorn
 plotly
-kaleido
+kaleido=0.1.*
