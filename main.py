@@ -58,12 +58,12 @@ def build_gauge_figure(
     )
 
     fig.update_layout(
-        width=105,
-        height=70,
-        margin=dict(t=12, r=10, l=10, b=6),
+        width=420,
+        height=280,
+        margin=dict(t=50, r=25, l=25, b=20),
         paper_bgcolor="white",
         plot_bgcolor="white",
-        font=dict(color="#111827", size=4),
+        font=dict(color="#111827", size=16),
     )
 
     return fig
@@ -83,7 +83,7 @@ def gauge_png(
         fig = build_gauge_figure(value=value, title=title)
 
         # Genera bytes PNG en memoria, sin guardar archivo temporal
-        image_bytes = fig.to_image(format="png", width=105, height=70, scale=2)
+        image_bytes = fig.to_image(format="png", width=420, height=280, scale=2)
 
         return Response(
             content=image_bytes,
