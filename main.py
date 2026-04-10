@@ -83,7 +83,7 @@ def gauge_png(
         fig = build_gauge_figure(value=value, title=title)
 
         # Genera bytes PNG en memoria, sin guardar archivo temporal
-        image_bytes = fig.to_image(format="png", width=420, height=280, scale=2)
+        image_bytes = fig.to_image(format="png", width=420, height=280, scale=1)
 
         return Response(
             content=image_bytes,
