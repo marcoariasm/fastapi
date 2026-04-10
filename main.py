@@ -60,7 +60,7 @@ def build_gauge_figure(
     fig.update_layout(
         width=420,
         height=280,
-        margin=dict(t=50, r=25, l=25, b=20),
+        margin=dict(t=50, r=35, l=25, b=20),
         paper_bgcolor="white",
         plot_bgcolor="white",
         font=dict(color="#111827", size=16),
